@@ -1,0 +1,44 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.41421",
+   "Default View_TopLeft":"-163,-35",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port S00_AXI_0 -pg 1 -lvl 0 -x -710 -y -270 -defaultsOSRD
+preplace port SPI_0_0 -pg 1 -lvl 6 -x 980 -y 290 -defaultsOSRD
+preplace port uart_rtl -pg 1 -lvl 6 -x 980 -y 30 -defaultsOSRD
+preplace port rs232_uart -pg 1 -lvl 6 -x 980 -y 160 -defaultsOSRD
+preplace port ACLK_0 -pg 1 -lvl 0 -x -710 -y 170 -defaultsOSRD
+preplace port ARESETN_0 -pg 1 -lvl 0 -x -710 -y 260 -defaultsOSRD
+preplace port uart16550_irpt -pg 1 -lvl 6 -x 980 -y 60 -defaultsOSRD
+preplace port uartlite_irpt -pg 1 -lvl 6 -x 980 -y 200 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 4 -x 520 -y -250 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 1 -x -320 -y -70 -defaultsOSRD
+preplace inst axi_quad_spi_0 -pg 1 -lvl 4 -x 520 -y 470 -defaultsOSRD
+preplace inst axi_uart16550_0 -pg 1 -lvl 4 -x 520 -y 20 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -x 800 -y -140 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -x 230 -y 70 -defaultsOSRD
+preplace inst axi_uart16550_1 -pg 1 -lvl 2 -x -10 -y 240 -defaultsOSRD
+preplace netloc ARESETN_0_1 1 0 4 -680J 150 -160 150 N 150 340
+preplace netloc ACLK_0_1 1 0 4 -690 140 -150 140 N 140 330
+preplace netloc xlconstant_0_dout 1 1 3 -140 10 N 10 310
+preplace netloc axi_uart16550_0_ip2intc_irpt 1 4 2 660J 60 NJ
+preplace netloc axi_quad_spi_0_ip2intc_irpt 1 4 2 660 240 940J
+preplace netloc axi_uart16550_0_UART 1 4 2 NJ 10 930J
+preplace netloc axi_quad_spi_0_SPI_0 1 4 2 670J 290 NJ
+preplace netloc axi_interconnect_0_M01_AXI 1 1 3 -140 -10 N -10 N
+preplace netloc axi_interconnect_0_M00_AXI 1 1 3 N -100 N -100 310
+preplace netloc axi_interconnect_0_M02_AXI 1 1 3 -160 0 N 0 320
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 4 1 660 -250n
+preplace netloc S00_AXI_0_1 1 0 1 -690 -270n
+preplace netloc axi_interconnect_0_M03_AXI 1 1 1 -170 -40n
+preplace netloc axi_uart16550_1_UART 1 2 4 NJ 230 NJ 230 NJ 230 930
+levelinfo -pg 1 -710 -320 -10 230 520 800 980
+pagesize -pg 1 -db -bbox -sgen -850 -360 1130 560
+"
+}
+{
+   "da_board_cnt":"2",
+   "da_clkrst_cnt":"7"
+}

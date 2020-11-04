@@ -1,0 +1,1062 @@
+
+*** Running vivado
+    with args -log rocket_fpga_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source rocket_fpga_top.tcl -notrace
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source rocket_fpga_top.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1035.375 ; gain = 0.000
+Command: link_design -top rocket_fpga_top -part xcvu9p-flga2104-2L-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcvu9p-flga2104-2L-e
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/clock/ip/clock_clk_wiz_0_0/clock_clk_wiz_0_0.dcp' for cell 'i_clock/clock_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_axi_clock_converter_0_0/ddr4_axi_clock_converter_0_0.dcp' for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/ddr4_ddr4_0_0.dcp' for cell 'i_min_soc/mem/ddr4_i/ddr4_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_util_vector_logic_0_0/ddr4_util_vector_logic_0_0.dcp' for cell 'i_min_soc/mem/ddr4_i/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_bram_ctrl_0_0/uart_axi_bram_ctrl_0_0.dcp' for cell 'i_min_soc/mmio_mem/uart_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_quad_spi_0_0/uart_axi_quad_spi_0_0.dcp' for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_uart16550_0_0/uart_axi_uart16550_0_0.dcp' for cell 'i_min_soc/mmio_mem/uart_i/axi_uart16550_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_uart16550_0_1/uart_axi_uart16550_0_1.dcp' for cell 'i_min_soc/mmio_mem/uart_i/axi_uart16550_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_blk_mem_gen_0_0/uart_blk_mem_gen_0_0.dcp' for cell 'i_min_soc/mmio_mem/uart_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_xbar_0/uart_xbar_0.dcp' for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_auto_ds_0/uart_auto_ds_0.dcp' for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m01_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_auto_pc_0/uart_auto_pc_0.dcp' for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m01_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_auto_ds_1/uart_auto_ds_1.dcp' for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m02_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_auto_pc_1/uart_auto_pc_1.dcp' for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m02_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_auto_ds_2/uart_auto_ds_2.dcp' for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m03_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_auto_pc_2/uart_auto_pc_2.dcp' for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m03_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1781.598 ; gain = 18.043
+INFO: [Netlist 29-17] Analyzing 3138 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: i_min_soc/mem/ddr4_i/ddr4_0 UUID: 5dbf7168-cf11-5467-9933-8a0d9bbce902 
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_quad_spi_0_0/uart_axi_quad_spi_0_0_board.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_quad_spi_0_0/uart_axi_quad_spi_0_0_board.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_quad_spi_0_0/uart_axi_quad_spi_0_0.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_quad_spi_0_0/uart_axi_quad_spi_0_0.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_uart16550_0_0/uart_axi_uart16550_0_0_board.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_uart16550_0/U0'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_uart16550_0_0/uart_axi_uart16550_0_0_board.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_uart16550_0/U0'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_uart16550_0_0/uart_axi_uart16550_0_0.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_uart16550_0/U0'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_uart16550_0_0/uart_axi_uart16550_0_0.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_uart16550_0/U0'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_uart16550_0_1/uart_axi_uart16550_0_1_board.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_uart16550_1/U0'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_uart16550_0_1/uart_axi_uart16550_0_1_board.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_uart16550_1/U0'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_uart16550_0_1/uart_axi_uart16550_0_1.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_uart16550_1/U0'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_uart16550_0_1/uart_axi_uart16550_0_1.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_uart16550_1/U0'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/bd_0/ip/ip_0/bd_c597_microblaze_I_0.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/bd_0/ip/ip_0/bd_c597_microblaze_I_0.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/bd_0/ip/ip_1/bd_c597_rst_0_0_board.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/bd_0/ip/ip_1/bd_c597_rst_0_0_board.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/bd_0/ip/ip_1/bd_c597_rst_0_0.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/bd_0/ip/ip_1/bd_c597_rst_0_0.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/bd_0/ip/ip_2/bd_c597_ilmb_0.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/bd_0/ip/ip_2/bd_c597_ilmb_0.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/bd_0/ip/ip_3/bd_c597_dlmb_0.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/bd_0/ip/ip_3/bd_c597_dlmb_0.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/bd_0/ip/ip_10/bd_c597_iomodule_0_0_board.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/bd_0/ip/ip_10/bd_c597_iomodule_0_0_board.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/ip_0/ddr4_ddr4_0_0_microblaze_mcs_board.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/ip_0/ddr4_ddr4_0_0_microblaze_mcs_board.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/par/ddr4_ddr4_0_0.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2446.906 ; gain = 26.371
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/par/ddr4_ddr4_0_0.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/clock/ip/clock_clk_wiz_0_0/clock_clk_wiz_0_0_board.xdc] for cell 'i_clock/clock_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/clock/ip/clock_clk_wiz_0_0/clock_clk_wiz_0_0_board.xdc] for cell 'i_clock/clock_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/clock/ip/clock_clk_wiz_0_0/clock_clk_wiz_0_0.xdc] for cell 'i_clock/clock_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/clock/ip/clock_clk_wiz_0_0/clock_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/clock/ip/clock_clk_wiz_0_0/clock_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:48 ; elapsed = 00:00:39 . Memory (MB): peak = 2931.148 ; gain = 484.242
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/clock/ip/clock_clk_wiz_0_0/clock_clk_wiz_0_0.xdc] for cell 'i_clock/clock_i/clk_wiz_0/inst'
+Parsing XDC File [C:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/constrs_1/imports/constrs/fpga_top.xdc]
+Finished Parsing XDC File [C:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/constrs_1/imports/constrs/fpga_top.xdc]
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_quad_spi_0_0/uart_axi_quad_spi_0_0_clocks.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_axi_quad_spi_0_0/uart_axi_quad_spi_0_0_clocks.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_auto_ds_0/uart_auto_ds_0_clocks.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m01_couplers/auto_ds/inst'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_auto_ds_0/uart_auto_ds_0_clocks.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m01_couplers/auto_ds/inst'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_auto_ds_1/uart_auto_ds_1_clocks.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m02_couplers/auto_ds/inst'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_auto_ds_1/uart_auto_ds_1_clocks.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m02_couplers/auto_ds/inst'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_auto_ds_2/uart_auto_ds_2_clocks.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m03_couplers/auto_ds/inst'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/uart/ip/uart_auto_ds_2/uart_auto_ds_2_clocks.xdc] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m03_couplers/auto_ds/inst'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/ddr4_ddr4_0_0_board.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/ddr4_ddr4_0_0_board.xdc] for cell 'i_min_soc/mem/ddr4_i/ddr4_0/inst'
+Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_axi_clock_converter_0_0/ddr4_axi_clock_converter_0_0_clocks.xdc] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst'
+Finished Parsing XDC File [c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_axi_clock_converter_0_0/ddr4_axi_clock_converter_0_0_clocks.xdc] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_interconnect_0/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst' of design 'design_1' [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst' of design 'design_1' [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst' of design 'design_1' [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst' of design 'design_1' [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst' of design 'design_1' [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst' of design 'design_1' [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst' of design 'design_1' [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst' of design 'design_1' [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.cdc_wr_rst_busy_ic_3.xpm_cdc_single_inst3'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.cdc_wr_rst_busy_ic_3.xpm_cdc_single_inst3'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.cdc_wr_rst_busy_ic_1.xpm_cdc_single_inst1'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.cdc_wr_rst_busy_ic_1.xpm_cdc_single_inst1'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.cdc_wr_rst_busy_ic_2.xpm_cdc_single_inst2'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.cdc_wr_rst_busy_ic_2.xpm_cdc_single_inst2'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'i_min_soc/mem/ddr4_i/axi_clock_converter_0/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'rocket_fpga_top'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 2941.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 640 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 15 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 8 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 2 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 4 instances
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 8 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 72 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 63 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 37 instances
+  RAM256X1D => RAM256X1D (MUXF7(x4), MUXF8(x2), RAMD64E(x8)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 204 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 205 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 8 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
+
+38 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:02:41 ; elapsed = 00:02:43 . Memory (MB): peak = 2941.469 ; gain = 1906.094
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu9p'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2941.469 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1cb90837a
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:28 . Memory (MB): peak = 2941.469 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize MIG Cores
+INFO: [Mig 66-454] Using cached IP synthesis design for IP xilinx.com:ip:ddr4_phy:2.2, cache-ID = 6ebeb67ec5fd42a9.
+get_clocks: Time (s): cpu = 00:00:39 ; elapsed = 00:00:28 . Memory (MB): peak = 3194.066 ; gain = 0.000
+read_xdc: Time (s): cpu = 00:00:44 ; elapsed = 00:00:33 . Memory (MB): peak = 3194.066 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 3278.137 ; gain = 0.000
+Phase 1 Generate And Synthesize MIG Cores | Checksum: 10892003f
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:34 . Memory (MB): peak = 3278.137 ; gain = 144.730
+
+Phase 2 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = f270b588c0d8f0be.
+get_clocks: Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 3290.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.217 . Memory (MB): peak = 3290.699 ; gain = 0.000
+Phase 2 Generate And Synthesize Debug Cores | Checksum: 1a9b90ceb
+
+Time (s): cpu = 00:02:23 ; elapsed = 00:02:38 . Memory (MB): peak = 3290.699 ; gain = 157.293
+
+Phase 3 Retarget
+INFO: [Opt 31-138] Pushed 31 inverter(s) to 2675 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: bb87c035
+
+Time (s): cpu = 00:02:40 ; elapsed = 00:02:51 . Memory (MB): peak = 3291.164 ; gain = 157.758
+INFO: [Opt 31-389] Phase Retarget created 33 cells and removed 319 cells
+INFO: [Opt 31-1021] In phase Retarget, 176 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 33 inverter(s) to 33 load pin(s).
+Phase 4 Constant propagation | Checksum: 19a292dca
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:02:55 . Memory (MB): peak = 3291.164 ; gain = 157.758
+INFO: [Opt 31-389] Phase Constant propagation created 907 cells and removed 3117 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 171 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 13b28dd51
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:03:10 . Memory (MB): peak = 3291.164 ; gain = 157.758
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3446 cells
+INFO: [Opt 31-1021] In phase Sweep, 2443 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 10a257cd9
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:03:16 . Memory (MB): peak = 3291.164 ; gain = 157.758
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 2 cells.
+INFO: [Opt 31-1021] In phase BUFG optimization, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 10a257cd9
+
+Time (s): cpu = 00:03:07 ; elapsed = 00:03:19 . Memory (MB): peak = 3291.164 ; gain = 157.758
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 11ff2193c
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:03:20 . Memory (MB): peak = 3291.164 ; gain = 157.758
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 306 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              33  |             319  |                                            176  |
+|  Constant propagation         |             907  |            3117  |                                            171  |
+|  Sweep                        |               0  |            3446  |                                           2443  |
+|  BUFG optimization            |               1  |               2  |                                              1  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                            306  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.476 . Memory (MB): peak = 3291.164 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: fc3e294c
+
+Time (s): cpu = 00:03:14 ; elapsed = 00:03:25 . Memory (MB): peak = 3291.164 ; gain = 157.758
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Power 33-23] Power model is not available for xiphy_riu_or
+INFO: [Power 33-23] Power model is not available for genVref.u_hpio_vref
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 58 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 116
+Ending PowerOpt Patch Enables Task | Checksum: fc3e294c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3904.840 ; gain = 0.000
+Ending Power Optimization Task | Checksum: fc3e294c
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:01:04 . Memory (MB): peak = 3904.840 ; gain = 613.676
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: fc3e294c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3904.840 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 3904.840 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: fc3e294c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 3904.840 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+81 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:05:54 ; elapsed = 00:05:07 . Memory (MB): peak = 3904.840 ; gain = 963.371
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.683 . Memory (MB): peak = 3904.840 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jason/fpga/joe_rocket/joe_rocket.runs/impl_1/rocket_fpga_top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:01:27 ; elapsed = 00:01:01 . Memory (MB): peak = 3904.840 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file rocket_fpga_top_drc_opted.rpt -pb rocket_fpga_top_drc_opted.pb -rpx rocket_fpga_top_drc_opted.rpx
+Command: report_drc -file rocket_fpga_top_drc_opted.rpt -pb rocket_fpga_top_drc_opted.pb -rpx rocket_fpga_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/jason/fpga/joe_rocket/joe_rocket.runs/impl_1/rocket_fpga_top_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 3904.840 ; gain = 0.000
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu9p'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 3904.840 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: f919b1f4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 3904.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 3904.840 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 6b567b7f
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:59 . Memory (MB): peak = 4393.309 ; gain = 488.469
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: ad9b26a7
+
+Time (s): cpu = 00:03:18 ; elapsed = 00:02:50 . Memory (MB): peak = 4543.629 ; gain = 638.789
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: ad9b26a7
+
+Time (s): cpu = 00:03:18 ; elapsed = 00:02:51 . Memory (MB): peak = 4543.629 ; gain = 638.789
+Phase 1 Placer Initialization | Checksum: ad9b26a7
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:02:52 . Memory (MB): peak = 4543.629 ; gain = 638.789
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: a111c281
+
+Time (s): cpu = 00:04:39 ; elapsed = 00:03:48 . Memory (MB): peak = 4543.629 ; gain = 638.789
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 19bbbbf2e
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:03:52 . Memory (MB): peak = 4543.629 ; gain = 638.789
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 19bbbbf2e
+
+Time (s): cpu = 00:04:48 ; elapsed = 00:03:57 . Memory (MB): peak = 4609.461 ; gain = 704.621
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 179fee365
+
+Time (s): cpu = 00:04:56 ; elapsed = 00:04:03 . Memory (MB): peak = 4609.461 ; gain = 704.621
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 179fee365
+
+Time (s): cpu = 00:04:57 ; elapsed = 00:04:04 . Memory (MB): peak = 4609.461 ; gain = 704.621
+Phase 2.1.1 Partition Driven Placement | Checksum: 179fee365
+
+Time (s): cpu = 00:04:57 ; elapsed = 00:04:05 . Memory (MB): peak = 4609.461 ; gain = 704.621
+Phase 2.1 Floorplanning | Checksum: 179fee365
+
+Time (s): cpu = 00:04:57 ; elapsed = 00:04:05 . Memory (MB): peak = 4609.461 ; gain = 704.621
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 6 LUTNM shape to break, 2985 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 6, two critical 0, total 6, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1252 nets or cells. Created 6 new cells, deleted 1246 existing cells and moved 0 existing cell
+INFO: [Physopt 32-76] Pass 1. Identified 5 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr_axi/axi_w_channel_0/wready_d3. Replicated 7 times.
+INFO: [Physopt 32-81] Processed net i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr_axi/USE_UPSIZER.upsizer_d2/ARESET. Replicated 8 times.
+INFO: [Physopt 32-81] Processed net i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_ddr_cal_addr_decode/u_ddr_cal_cplx/cplx_cal. Replicated 7 times.
+INFO: [Physopt 32-81] Processed net i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_ui/u_ddr_ui_wr_data/app_wdf_rdy_r. Replicated 7 times.
+INFO: [Physopt 32-81] Processed net i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_ui/u_ddr_ui_wr_data/app_wdf_rdy_r_copy2. Replicated 5 times.
+INFO: [Physopt 32-232] Optimized 5 nets. Created 34 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 5 nets or cells. Created 34 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.447 . Memory (MB): peak = 5319.422 ; gain = 0.000
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 5319.422 ; gain = 0.000
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 5319.422 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            6  |           1246  |                  1252  |           0  |           1  |  00:00:04  |
+|  Very High Fanout                                 |           34  |              0  |                     5  |           0  |           1  |  00:00:03  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           40  |           1246  |                  1257  |           0  |           8  |  00:00:07  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: a96c6688
+
+Time (s): cpu = 00:10:05 ; elapsed = 00:07:57 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+Phase 2.2 Global Placement Core | Checksum: 1747cc897
+
+Time (s): cpu = 00:10:30 ; elapsed = 00:08:17 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+Phase 2 Global Placement | Checksum: 1747cc897
+
+Time (s): cpu = 00:10:30 ; elapsed = 00:08:18 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1990018d7
+
+Time (s): cpu = 00:10:42 ; elapsed = 00:08:28 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1476891a1
+
+Time (s): cpu = 00:11:01 ; elapsed = 00:08:41 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 7e6d5f10
+
+Time (s): cpu = 00:11:06 ; elapsed = 00:08:46 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+
+Phase 3.4 IO Cut Optimizer
+Phase 3.4 IO Cut Optimizer | Checksum: bc6116c4
+
+Time (s): cpu = 00:11:09 ; elapsed = 00:08:49 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: a355a91a
+
+Time (s): cpu = 00:11:20 ; elapsed = 00:08:56 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+
+Phase 3.6 Small Shape DP
+
+Phase 3.6.1 Small Shape Clustering
+Phase 3.6.1 Small Shape Clustering | Checksum: f15629ee
+
+Time (s): cpu = 00:11:49 ; elapsed = 00:09:18 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+
+Phase 3.6.2 Flow Legalize Slice Clusters
+Phase 3.6.2 Flow Legalize Slice Clusters | Checksum: 86056ebc
+
+Time (s): cpu = 00:11:56 ; elapsed = 00:09:25 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+
+Phase 3.6.3 Slice Area Swap
+Phase 3.6.3 Slice Area Swap | Checksum: 13a3dd313
+
+Time (s): cpu = 00:12:15 ; elapsed = 00:09:45 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+Phase 3.6 Small Shape DP | Checksum: 19123e515
+
+Time (s): cpu = 00:13:33 ; elapsed = 00:10:57 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1e900c9d1
+
+Time (s): cpu = 00:13:46 ; elapsed = 00:11:17 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1128a1177
+
+Time (s): cpu = 00:13:50 ; elapsed = 00:11:21 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+Phase 3 Detail Placement | Checksum: 1128a1177
+
+Time (s): cpu = 00:13:51 ; elapsed = 00:11:22 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: b78dcb59
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.474 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 170c474e5
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 5319.422 ; gain = 0.000
+INFO: [Place 46-35] Processed net i_min_soc/dut/AsyncResetRegVec_w1_i0/ldut_reset, inserted BUFG to drive 1079 loads.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1e41c6d6d
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 5319.422 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1ffd063d2
+
+Time (s): cpu = 00:15:47 ; elapsed = 00:12:49 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+
+Phase 4.1.1.2 BUFG Replication
+INFO: [Place 46-63] BUFG replication identified 0 candidate nets: Replicated nets: 0, Replicated BUFGs: 0, Replicated BUFG Driver: 0, Skipped due to Placement / Routing Conflict: 0, Skipped due to Timing: 0, Skipped due to constraints: 0
+Phase 4.1.1.2 BUFG Replication | Checksum: 1ffd063d2
+
+Time (s): cpu = 00:15:48 ; elapsed = 00:12:50 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.552. For the most accurate timing information please run report_timing.
+
+Phase 4.1.1.3 Replication
+INFO: [Place 46-19] Post Replication Timing Summary WNS=0.552. For the most accurate timing information please run report_timing.
+Phase 4.1.1.3 Replication | Checksum: bd595bbd
+
+Time (s): cpu = 00:15:56 ; elapsed = 00:12:57 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+Phase 4.1.1 Post Placement Optimization | Checksum: bd595bbd
+
+Time (s): cpu = 00:15:56 ; elapsed = 00:12:58 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+Phase 4.1 Post Commit Optimization | Checksum: bd595bbd
+
+Time (s): cpu = 00:15:57 ; elapsed = 00:12:59 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: bd595bbd
+
+Time (s): cpu = 00:16:03 ; elapsed = 00:13:05 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.514 . Memory (MB): peak = 5319.422 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 12cec5dee
+
+Time (s): cpu = 00:16:47 ; elapsed = 00:13:55 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 5319.422 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 1b6311e68
+
+Time (s): cpu = 00:16:48 ; elapsed = 00:13:56 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1b6311e68
+
+Time (s): cpu = 00:16:48 ; elapsed = 00:13:57 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+Ending Placer Task | Checksum: 1b1b50954
+
+Time (s): cpu = 00:16:48 ; elapsed = 00:13:57 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+INFO: [Common 17-83] Releasing license: Implementation
+128 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:17:19 ; elapsed = 00:14:18 . Memory (MB): peak = 5319.422 ; gain = 1414.582
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:40 ; elapsed = 00:00:15 . Memory (MB): peak = 5319.422 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jason/fpga/joe_rocket/joe_rocket.runs/impl_1/rocket_fpga_top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:56 ; elapsed = 00:00:31 . Memory (MB): peak = 5319.422 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file rocket_fpga_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.492 . Memory (MB): peak = 5319.422 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file rocket_fpga_top_utilization_placed.rpt -pb rocket_fpga_top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file rocket_fpga_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.422 . Memory (MB): peak = 5319.422 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu9p'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC PLCK-58] Clock Placer Checks: Sub-optimal placement for a global clock-capable IO pin and BUFG pair.
+Resolution: A dedicated routing path between the two can be used if: (a) The global clock-capable IO (GCIO) is placed on a GCIO capable site (b) The BUFG is placed in the same bank of the device as the GCIO pin. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	JTAG_TCK_IBUF_inst/IBUFCTRL_INST (IBUFCTRL.O) is locked to IOB_X0Y422 (in SLR 1)
+	JTAG_TCK_IBUF_BUFG_inst (BUFGCE.I) is provisionally placed by clockplacer on BUFGCE_X0Y140 (in SLR 1)
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 5013e1dd ConstDB: 0 ShapeSum: f20e2546 RouteDB: 6f930231
+
+Phase 1 Build RT Design
+Nodegraph reading from file.  Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 5319.422 ; gain = 0.000
+Phase 1 Build RT Design | Checksum: 13324e203
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:13 . Memory (MB): peak = 5319.422 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 8781e4da NumContArr: 5a5b6ffd Constraints: 4b82e4c2 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 12d603999
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:01:15 . Memory (MB): peak = 5319.422 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 12d603999
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:01:15 . Memory (MB): peak = 5319.422 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 12d603999
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:01:15 . Memory (MB): peak = 5319.422 ; gain = 0.000
+
+Phase 2.4 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.4 Global Clock Net Routing | Checksum: 214989ef4
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:42 . Memory (MB): peak = 5742.496 ; gain = 423.074
+
+Phase 2.5 Update Timing
+Phase 2.5 Update Timing | Checksum: 2d860cc9b
+
+Time (s): cpu = 00:03:41 ; elapsed = 00:02:37 . Memory (MB): peak = 5742.496 ; gain = 423.074
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.772  | TNS=0.000  | WHS=-2.184 | THS=-2377.226|
+
+WARNING: [Route 35-41] Unusually high hold violations were detected on a large number of pins. This may result in high router runtime.
+
+Phase 2.6 Update Timing for Bus Skew
+
+Phase 2.6.1 Update Timing
+Phase 2.6.1 Update Timing | Checksum: 2baa519da
+
+Time (s): cpu = 00:05:32 ; elapsed = 00:03:45 . Memory (MB): peak = 5742.496 ; gain = 423.074
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.772  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.6 Update Timing for Bus Skew | Checksum: 2e197d3e4
+
+Time (s): cpu = 00:05:33 ; elapsed = 00:03:46 . Memory (MB): peak = 5742.496 ; gain = 423.074
+Phase 2 Router Initialization | Checksum: 2f44cbd4d
+
+Time (s): cpu = 00:05:33 ; elapsed = 00:03:46 . Memory (MB): peak = 5742.496 ; gain = 423.074
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000662698 %
+  Global Horizontal Routing Utilization  = 0.000333413 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 97592
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 76307
+  Number of Partially Routed Nets     = 21285
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Number SLLs per Column: 1440
+Estimated SLL Demand Per Column: 
+  SLR [1-2]        0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     1 (  0%)     1 (  0%)     2 (  0%)    85 (  6%)   162 ( 11%)     3 (  0%)     3 (  0%)     1 (  0%)  Demand:   258 Available: 17280 Utilization(%): 1.49
+  SLR [0-1]        0 (  0%)     0 (  0%)     0 (  0%)     5 (  0%)     0 (  0%)     1 (  0%)     1 (  0%)     1 (  0%)     1 (  0%)     1 (  0%)     1 (  0%)     0 (  0%)  Demand:    11 Available: 17280 Utilization(%): 0.06
+Phase 3 Initial Routing | Checksum: 1d270f787
+
+Time (s): cpu = 00:12:21 ; elapsed = 00:07:58 . Memory (MB): peak = 6212.980 ; gain = 893.559
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 21237
+ Number of Nodes with overlaps = 1779
+ Number of Nodes with overlaps = 215
+ Number of Nodes with overlaps = 44
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.362  | TNS=0.000  | WHS=-0.290 | THS=-52.153|
+
+Phase 4.1 Global Iteration 0 | Checksum: 2295c3cc5
+
+Time (s): cpu = 00:20:53 ; elapsed = 00:14:01 . Memory (MB): peak = 6212.980 ; gain = 893.559
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1738
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.362  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 242a2df3c
+
+Time (s): cpu = 00:22:06 ; elapsed = 00:15:00 . Memory (MB): peak = 6212.980 ; gain = 893.559
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 383
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.362  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 1aa7d462f
+
+Time (s): cpu = 00:22:27 ; elapsed = 00:15:21 . Memory (MB): peak = 6212.980 ; gain = 893.559
+Phase 4 Rip-up And Reroute | Checksum: 1aa7d462f
+
+Time (s): cpu = 00:22:27 ; elapsed = 00:15:22 . Memory (MB): peak = 6212.980 ; gain = 893.559
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 22a3c850a
+
+Time (s): cpu = 00:23:03 ; elapsed = 00:15:45 . Memory (MB): peak = 6212.980 ; gain = 893.559
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.362  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 2a89c4f28
+
+Time (s): cpu = 00:23:04 ; elapsed = 00:15:46 . Memory (MB): peak = 6212.980 ; gain = 893.559
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2a89c4f28
+
+Time (s): cpu = 00:23:04 ; elapsed = 00:15:46 . Memory (MB): peak = 6212.980 ; gain = 893.559
+Phase 5 Delay and Skew Optimization | Checksum: 2a89c4f28
+
+Time (s): cpu = 00:23:04 ; elapsed = 00:15:47 . Memory (MB): peak = 6212.980 ; gain = 893.559
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 203c48931
+
+Time (s): cpu = 00:23:30 ; elapsed = 00:16:03 . Memory (MB): peak = 6212.980 ; gain = 893.559
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.362  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1e7302632
+
+Time (s): cpu = 00:23:31 ; elapsed = 00:16:04 . Memory (MB): peak = 6212.980 ; gain = 893.559
+Phase 6 Post Hold Fix | Checksum: 1e7302632
+
+Time (s): cpu = 00:23:31 ; elapsed = 00:16:04 . Memory (MB): peak = 6212.980 ; gain = 893.559
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.41089 %
+  Global Horizontal Routing Utilization  = 1.20184 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1cdf7c361
+
+Time (s): cpu = 00:23:36 ; elapsed = 00:16:08 . Memory (MB): peak = 6212.980 ; gain = 893.559
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1cdf7c361
+
+Time (s): cpu = 00:23:37 ; elapsed = 00:16:08 . Memory (MB): peak = 6212.980 ; gain = 893.559
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1cdf7c361
+
+Time (s): cpu = 00:23:51 ; elapsed = 00:16:27 . Memory (MB): peak = 6212.980 ; gain = 893.559
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.362  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1cdf7c361
+
+Time (s): cpu = 00:23:52 ; elapsed = 00:16:28 . Memory (MB): peak = 6212.980 ; gain = 893.559
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:23:52 ; elapsed = 00:16:29 . Memory (MB): peak = 6212.980 ; gain = 893.559
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+149 Infos, 48 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:24:16 ; elapsed = 00:16:42 . Memory (MB): peak = 6212.980 ; gain = 893.559
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:50 ; elapsed = 00:00:20 . Memory (MB): peak = 6212.980 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jason/fpga/joe_rocket/joe_rocket.runs/impl_1/rocket_fpga_top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:01:02 ; elapsed = 00:00:33 . Memory (MB): peak = 6212.980 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file rocket_fpga_top_drc_routed.rpt -pb rocket_fpga_top_drc_routed.pb -rpx rocket_fpga_top_drc_routed.rpx
+Command: report_drc -file rocket_fpga_top_drc_routed.rpt -pb rocket_fpga_top_drc_routed.pb -rpx rocket_fpga_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/jason/fpga/joe_rocket/joe_rocket.runs/impl_1/rocket_fpga_top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:44 ; elapsed = 00:00:25 . Memory (MB): peak = 6212.980 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file rocket_fpga_top_methodology_drc_routed.rpt -pb rocket_fpga_top_methodology_drc_routed.pb -rpx rocket_fpga_top_methodology_drc_routed.rpx
+Command: report_methodology -file rocket_fpga_top_methodology_drc_routed.rpt -pb rocket_fpga_top_methodology_drc_routed.pb -rpx rocket_fpga_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/jason/fpga/joe_rocket/joe_rocket.runs/impl_1/rocket_fpga_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:01:59 ; elapsed = 00:01:14 . Memory (MB): peak = 6212.980 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file rocket_fpga_top_power_routed.rpt -pb rocket_fpga_top_power_summary_routed.pb -rpx rocket_fpga_top_power_routed.rpx
+Command: report_power -file rocket_fpga_top_power_routed.rpt -pb rocket_fpga_top_power_summary_routed.pb -rpx rocket_fpga_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+161 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:01:49 ; elapsed = 00:01:09 . Memory (MB): peak = 6212.980 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file rocket_fpga_top_route_status.rpt -pb rocket_fpga_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file rocket_fpga_top_timing_summary_routed.rpt -pb rocket_fpga_top_timing_summary_routed.pb -rpx rocket_fpga_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_timing_summary: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 6212.980 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_incremental_reuse -file rocket_fpga_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file rocket_fpga_top_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 6212.980 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file rocket_fpga_top_bus_skew_routed.rpt -pb rocket_fpga_top_bus_skew_routed.pb -rpx rocket_fpga_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Memdata 28-167] Found XPM memory block i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the i_min_soc/mmio_mem/uart_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+Command: write_bitstream -force rocket_fpga_top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu9p'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer i_min_soc/mmio_mem/SPI_0_0_sck_iobuf/IBUFCTRL_INST has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer i_min_soc/mmio_mem/SPI_0_0_ss_iobuf_0/IBUFCTRL_INST has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC DPIP-2] Input pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T input i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__0 input i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__1 input i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__2 input i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__4 input i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/sfma/fma/_T input i_min_soc/dut/ldut/tile/fpuOpt/sfma/fma/_T/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/sfma/fma/_T__0 input i_min_soc/dut/ldut/tile/fpuOpt/sfma/fma/_T__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/sfma/fma/_T__0 input i_min_soc/dut/ldut/tile/fpuOpt/sfma/fma/_T__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP i_min_soc/dut/ldut/tile/core/div/_T_60 output i_min_soc/dut/ldut/tile/core/div/_T_60/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP i_min_soc/dut/ldut/tile/core/div/_T_60__0 output i_min_soc/dut/ldut/tile/core/div/_T_60__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP i_min_soc/dut/ldut/tile/core/div/_T_60__1 output i_min_soc/dut/ldut/tile/core/div/_T_60__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP i_min_soc/dut/ldut/tile/core/div/_T_60__2 output i_min_soc/dut/ldut/tile/core/div/_T_60__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__0 output i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__1 output i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__4 output i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__5 output i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__7 output i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__7/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/sfma/fma/_T output i_min_soc/dut/ldut/tile/fpuOpt/sfma/fma/_T/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/sfma/fma/_T__0 output i_min_soc/dut/ldut/tile/fpuOpt/sfma/fma/_T__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP i_min_soc/dut/ldut/tile/core/div/_T_60 multiplier stage i_min_soc/dut/ldut/tile/core/div/_T_60/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP i_min_soc/dut/ldut/tile/core/div/_T_60__0 multiplier stage i_min_soc/dut/ldut/tile/core/div/_T_60__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP i_min_soc/dut/ldut/tile/core/div/_T_60__1 multiplier stage i_min_soc/dut/ldut/tile/core/div/_T_60__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP i_min_soc/dut/ldut/tile/core/div/_T_60__2 multiplier stage i_min_soc/dut/ldut/tile/core/div/_T_60__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__0 multiplier stage i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__1 multiplier stage i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__4 multiplier stage i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__5 multiplier stage i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__7 multiplier stage i_min_soc/dut/ldut/tile/fpuOpt/dfma/fma/_T__7/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/sfma/fma/_T multiplier stage i_min_soc/dut/ldut/tile/fpuOpt/sfma/fma/_T/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP i_min_soc/dut/ldut/tile/fpuOpt/sfma/fma/_T__0 multiplier stage i_min_soc/dut/ldut/tile/fpuOpt/sfma/fma/_T__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC RTSTAT-10] No routable loads: 267 net(s) have no routable loads. The problem bus(es) and/or net(s) are i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_CE_riu, i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_UE_riu, i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[12], i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[13], i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[14], i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[15], i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[0].sync_reg[1], i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[0].sync_reg[1], i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[0].sync_reg[1], i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[0].sync_reg[1], i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[1].sync_reg[1], i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[1].sync_reg[1], i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[1].sync_reg[1], i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[1].sync_reg[1], i_min_soc/mem/ddr4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[2].sync_reg[1]... and (the first 15 of 209 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 33 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Generating merged BMM file for the design top 'rocket_fpga_top'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/jason/fpga/joe_rocket/joe_rocket.srcs/sources_1/bd/ddr4/ip/ddr4_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf 
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./rocket_fpga_top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'C:/Users/jason/fpga/joe_rocket/joe_rocket.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri Oct 30 17:43:39 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+184 Infos, 83 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:04:19 ; elapsed = 00:04:01 . Memory (MB): peak = 6603.234 ; gain = 390.254
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 17:43:40 2020...

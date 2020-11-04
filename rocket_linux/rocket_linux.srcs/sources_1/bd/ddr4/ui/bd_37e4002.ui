@@ -1,0 +1,39 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-550,-213",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port C0_DDR4_0 -pg 1 -lvl 3 -x 740 -y 180 -defaultsOSRD
+preplace port C0_DDR4_S_AXI_0 -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace port default_250mhz_clk1 -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port c0_init_calib_complete_0 -pg 1 -lvl 3 -x 740 -y 200 -defaultsOSRD
+preplace port dbg_clk_0 -pg 1 -lvl 3 -x 740 -y 220 -defaultsOSRD
+preplace port sys_rst_0 -pg 1 -lvl 0 -x 0 -y 410 -defaultsOSRD
+preplace port s_axi_aclk_0 -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port s_axi_aresetn_0 -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace portBus dbg_bus_0 -pg 1 -lvl 3 -x 740 -y 240 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 190 -y 60 -defaultsOSRD -orient R180
+preplace inst axi_clock_converter_0 -pg 1 -lvl 1 -x 190 -y 300 -defaultsOSRD
+preplace inst ddr4_0 -pg 1 -lvl 2 -x 540 -y 230 -defaultsOSRD
+preplace netloc ddr4_0_c0_init_calib_complete 1 2 1 N 200
+preplace netloc ddr4_0_dbg_bus 1 2 1 N 240
+preplace netloc ddr4_0_dbg_clk 1 2 1 N 220
+preplace netloc sys_rst_0_1 1 0 2 NJ 410 370J
+preplace netloc ddr4_0_c0_ddr4_ui_clk 1 0 3 30 420 NJ 420 710
+preplace netloc s_axi_aclk_0_1 1 0 1 N 280
+preplace netloc s_axi_aresetn_0_1 1 0 1 N 300
+preplace netloc util_vector_logic_0_Res 1 0 2 20 400 360J
+preplace netloc ddr4_0_c0_ddr4_ui_clk_sync_rst 1 1 2 NJ 60 720
+preplace netloc default_250mhz_clk1_1 1 0 2 NJ 200 NJ
+preplace netloc C0_DDR4_S_AXI_0_1 1 0 1 N 260
+preplace netloc axi_clock_converter_0_M_AXI 1 1 1 350 220n
+preplace netloc ddr4_0_C0_DDR4 1 2 1 N 180
+levelinfo -pg 1 0 190 540 740
+pagesize -pg 1 -db -bbox -sgen -190 0 950 430
+"
+}
+{
+   "da_board_cnt":"2"
+}
